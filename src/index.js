@@ -1,10 +1,8 @@
 const express = require('express');
-
 const { ServerConfig , Logger} = require('./config'); // ./config/index.js == ./config
+const apiRoutes = require('./routers')
 
 const app = express();
-
-const apiRoutes = require('./routers')
 
 app.use('/api', apiRoutes);
 
